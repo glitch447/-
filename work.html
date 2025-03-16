@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Fonts Below -->
+    <!-- Font Madimi One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <!-- Font Anaheim -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Madimi+One&display=swap" rel="stylesheet">
+    <!-- Font Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <!-- Basic CSS -->
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <!-- NAV CSS -->
+    <link rel="stylesheet" href="CSS/stylenav.css" type="text/css">
+
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="nav-bar">
+				<h1><a href="Home.html"> Maggie Bordjoski </a></h1>
+				<input type="checkbox" id="check">
+				<span class="menu">
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="work.html">My Work</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+					<label for="check" class="close-menu"><i class="bi bi-x-lg"></i></label>
+				</span>
+				<label for="check" class="open-menu"><i class="bi bi-list"></i></label>
+			</ul>
+		</nav>
+	</header>
+	<div id="wrapper">
+		<main>
+			<section>
+				<h2>All of My Work</h2>
+				<h3>Game Design</h3>
+				<p>
+					All of my projects in Game Design
+				</p>
+				<div id="myCarousel" class="f-carousel">
+					<div class="f-carousel__slide"><a href="lostsouls.html"><img src="lost souls.gif" alt="Lost Souls"></a></div>
+					<div class="f-carousel__slide"><a href="Boundbywalls.html"><img src="completedintro.png" alt="Bound by Walls"></a></div>
+					<div class="f-carousel__slide"><a href="unspokenwords.html"><img src="unspokenWords.png" alt="Unspoken Words"></a></div>
+					<div class="f-carousel__slide"><a href="Shatteredreality.html"><img src="Shatteredreality.gif" alt="Shattered Reality"></a></div>
+				</div>
+			</section> 
+			<section>
+				<h3>Web Design</h3>
+				<p>
+					All of my projects in Web Design
+				</p>
+				<div id="myCarousel2" class="f-carousel">
+					<div class="f-carousel__slide"><a href="notionschoolplanner.html"><img src="Screenshot 2024-04-21 132852.png" alt="Notion School Planner"></a></div>
+					<div class="f-carousel__slide"><a href="Aidenportfolio.html"><img src="mockup1.png" alt="Aiden's Portfolio"></a></div>
+					<div class="f-carousel__slide"><a href="Homeguardian.html"><img src="homeguard1.png" alt="Home Guardian Remake"></a></div>
+				</div>
+			</section>
+			<section>
+				<h3>Mixed Media</h3>
+				<p>
+					All of my projects in Mixed Media
+				</p>
+				<div id="myCarousel3" class="f-carousel">
+					<div class="f-carousel__slide"><a href="donut.html"><img src="donut1.png" alt="3D Donut Model"></a></div>
+					<div class="f-carousel__slide"><a href="willy.html"><img src="IMG_7378.jpg" alt="Willy Painting"></a></div>
+					<div class="f-carousel__slide"><a href="ghostsonquad.html"><img src="ghost.jpg" alt="Ghost Vandalism"></a></div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<section>
+                <p><a href="Contact.html">Contact</a></p>
+			</section>
+			<section>
+			</section>
+			<section>
+				<p>Socials</p>
+				<a class="bi bi-pinterest" href="https://pin.it/59A4DlpXK" target="_blank"></a>
+				<a class="bi bi-spotify" href="https://open.spotify.com/user/315i7jelaqerkve22kt3quzrgj6u" target="_blank"></a>
+				<a class="bi bi-steam" href="https://steamcommunity.com/profiles/76561199044276357" target="_blank"></a>
+				<a class="bi bi-github" href="https://github.com/Mbordjo" target="_blank"></a>
+			</section>
+		</footer>
+	</div>
+</body>
+<script>   
+    const container = document.getElementById("myCarousel");
+    const options = { infinite: true };
+    new Carousel(container, options);
+
+	const container2 = document.getElementById("myCarousel2");
+    const options2 = { infinite: true };
+    new Carousel(container2, options2);
+
+	const container3 = document.getElementById("myCarousel3");
+    const options3 = { infinite: true };
+    new Carousel(container3, options3);
+</script>
+</html>
