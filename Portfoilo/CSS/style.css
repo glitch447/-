@@ -1,0 +1,76 @@
+* { /* default margin and padding to 0 */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body { /* setting the background for the body tag */
+    font-family: Arial, sans-serif;
+    background-color: #c6a9c0;
+}
+
+#wrapper { /* setting the grid up within the wrapper */
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+main { /* setting the main content and adding another grid within it */
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-family: "Mamini One", sans-serif;  
+}
+
+main h2 { /* setting the h2 tag within the main content */
+    color: #474365;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 36px;
+    font-family: "zilla slab", serif;
+    border-bottom: 4px solid #474365;
+}
+
+main a { /* setting the links within the main content */
+    color: #474365;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.15s ease-in-out;
+}
+
+main section { /* setting the section within the main content */
+    grid-column: span 12;
+    margin-top: 20px;
+}
+
+main a:hover { /* setting the hover state for the links within the main content */
+    color: #c6a9c0;
+    text-decoration: underline;
+}
+
+footer { /* setting the footer */
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    background-color: #474365;
+    text-align: center;
+    color: #c6a9c0;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Anaheim", sans-serif;
+}
+footer a { /* setting the footer links */
+    text-decoration: none;
+    color: #c6a9c0;
+}
+
+@media(max-width: 720px) { /* setting up the mobile view */
+    main {
+        grid-template-columns: 1fr;
+    }
+}

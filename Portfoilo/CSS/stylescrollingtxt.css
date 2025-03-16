@@ -1,0 +1,15 @@
+/*All of the Scrolling Text CSS is here*/
+
+.scrolling-txt-container { /* setting up the scrolling text container */
+    grid-column: span 12;
+    font-size: 18px;
+    width: 1200px;
+    overflow: hidden;
+    height: auto;
+    background-color: #474365;
+}
+
+.scrolling-txt { /* setting up the scrolling text */
+    white-space: nowrap;
+    animation: scrolling-txt 30s linear infinite;
+}

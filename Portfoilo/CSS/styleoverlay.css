@@ -1,0 +1,59 @@
+/*All of the Interactive Image Overlay CSS is here*/
+.overlaycontainer { /* setting up the container for the overlay */
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    margin-right: 40px;
+}
+
+.overlay { /* setting up the overlay */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+    background-color: #474365;
+    transform: translateY(240px);
+    opacity: 1;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.overlayup { /* setting up the overlay for the top */
+    background-color: #474365;
+    height: 25px;
+    width: 40px;
+    position: relative;
+    z-index: 10000;
+    top: -68px;
+    border-top-right-radius: 100px;
+    transition: 0.5s ease;
+}
+
+.overlaycontainer:hover .overlay { /* setting up the overlay during the hover state */
+    height: 60px;
+    transform: translateY(230px);
+    background-color: #474365;
+}
+
+.overlaycontainer:hover .overlayup { /* setting up the overlay for the top during the hover state */
+    background-color: #474365;
+    transform: translateY(-10px);
+}
+
+.overlaytext { /* setting up the text for the overlay */
+    color: white;
+    font-size: 20px;
+    font-family: "Zilla slab", serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

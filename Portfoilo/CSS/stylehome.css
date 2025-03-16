@@ -1,0 +1,47 @@
+/*All of the CSS specifically for the homepage is here*/
+
+.indent p{ /* setting up the paragraph indent for the homepage */
+    margin-left: 24px;
+    padding-bottom: 10px;
+}
+
+#header { /* setting up the header for the homepage */
+    border-bottom: 0;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#img { /* setting up the images for the homepage */
+    grid-column: span 12;
+    margin-bottom: 24px;
+    border-top: 4px solid #474365;
+    text-align: center;
+}
+
+#img img { /* setting up the image size for the homepage */
+    width: 400px;
+    height: 280px;
+    border-radius: 25px;
+}
+
+#hover a { /* setting up the hover state for the homepage */
+    text-decoration: none;
+    color: #c6a9c0;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+}
+
+#hover a::after { /* setting up the hover state for the homepage */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #c6a9c0;
+    transition: 0.15s ease-in-out;
+}
+#hover a:hover::after { /* setting up the hover state for the homepage */
+    width: 100%;
+}
